@@ -13,18 +13,33 @@
         <link rel="stylesheet" href="resources/static/css/responsive.css">
 
 </head>
-<script>
- Function count(){
-     var ELC = document.getElementById("ELC");
-     var NTG = document.getElementById("NTG");
-
-     var a= ((14*ELC)+(2*NTG));
-
-     alert(a);
-
- }
- </script>
 <body>
+        <script>
+                function count(){
+                    var ELC = document.getElementById("ELC").value;
+                    var NTG = document.getElementById("NTG").value;
+                    var HTO = document.getElementById("HTO").value;
+                    var CL = document.getElementById("CL").value;
+                    var PRP = document.getElementById("PRP").value;
+                    var WD= document.getElementById("WD").value;
+                    var VT = document.getElementById("VT").value;
+                    var ML = document.getElementById("ML").value;
+                    var LPG = document.getElementById("LPG").value;
+                    var WU= document.getElementById("WU").value;
+                    var MEF = document.getElementById("MEF").value;
+                    var GNB = document.getElementById("GNB").value;
+                    var DR = document.getElementById("DR").value;
+                    var FNV = document.getElementById("FNV").value;
+                    var SND = document.getElementById("SND").value;
+               
+                    var total= ((15*ELC)+(14*NTG)+(6*HTO)+(10*CL)+(9*PRP)+(13*WD)+(8*VT)+(12*ML)+(7*LPG)+(11*WU)+(4*MEF)+(1*GNB)+(2*DR)+(3*FNV)+(5*SND))/100;
+               
+                    alert("Your % score is "+total+ "%");
+               
+                }
+                </script>
+               
+
 <style>
 body, html {
     /* height: 100%; */
@@ -449,7 +464,7 @@ body, html {
 			
 			    <div class="col-sm-3">
 			
-			              <button type="button" class="form-control" name="submit" id="">Button</button>
+			              <button type="button" class="form-control" name="submit" id="" onclick="count()">Button</button>
 			
 			    </div>
 			
